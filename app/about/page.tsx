@@ -4,10 +4,10 @@ import { NewsletterForm } from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Product Manager at Meta Quest documenting experiments with AI productivity, personal knowledge management, and spatial computing. Currently vibe coding my way through life.",
+  description: "Product Manager at Meta Quest since 2019, previously at Riot Games, Xbox, Microsoft, and founded two indie game studios. Virginia Tech CS grad documenting experiments with AI productivity and spatial computing.",
   openGraph: {
     title: "About | Ron Forbes",
-    description: "Product Manager at Meta Quest documenting experiments with AI productivity, personal knowledge management, and spatial computing.",
+    description: "Product Manager at Meta Quest since 2019, previously at Riot Games, Xbox, Microsoft, and founded two indie game studios. Virginia Tech CS grad documenting experiments with AI productivity and spatial computing.",
   },
 };
 
@@ -85,6 +85,49 @@ export default function AboutPage() {
             <p>
               <strong>ronOS</strong><br />
               My personal knowledge base in Obsidian, connected to Claude Code for AI-powered reflection and life coaching.
+            </p>
+          </div>
+
+          <div>
+            <h2>Career Highlights</h2>
+            <p>
+              <strong>Meta (Facebook)</strong> | Product Manager, Horizon OS Input &amp; Interaction | 2019 - Present<br />
+              Leading strategy and development of the system input platform and interaction experience powering Meta Quest. Work includes the Quest system shell, input capabilities, and core interaction experiences. Included a role managing a PM team leading the system shell.
+            </p>
+            <p>
+              <strong>Block Party</strong> | Founder &amp; CEO | 2018 - 2019<br />
+              Founded and bootstrapped an independent game development studio. Launched Blitz of Blocks across web, iOS, and Android, engaging 10k users in the first month.
+            </p>
+            <p>
+              <strong>Riot Games</strong> | Senior Development Manager / Product Lead, Esports Events | 2014 - 2018<br />
+              Led vision, strategy, and roadmap for League of Legends esports events. Delivered consistent growth in viewership, fan sentiment, and operational efficiency across global events.
+            </p>
+            <p>
+              <strong>Omega Entertainment</strong> | Founder &amp; CEO | 2012 - 2014<br />
+              Independently developed and published two games (Vector Arena, Block Party) across Windows and Windows Phone platforms.
+            </p>
+            <p>
+              <strong>Microsoft</strong> | Senior Program Manager, Kinect @ Xbox | 2009 - 2014<br />
+              Led product development for biometric identity, fitness tracking, and skeletal tracking systems across Kinect for Xbox 360 and Xbox One. Partnered with game developers and engineering teams to ship platform APIs enabling console-differentiating experiences.
+            </p>
+            <p>
+              <strong>Microsoft</strong> | Software Development Engineer in Test, Internet Explorer 8 | 2007 - 2009<br />
+              Owned quality assurance for tabbed browsing and privacy management features. Earned Trustworthy Computing Award in Privacy for InPrivate Filtering advances.
+            </p>
+            <p>
+              <strong>Education:</strong> Virginia Tech, BS in Computer Science (2003 - 2007)
+            </p>
+            <hr className="my-4" />
+            <p>
+              Want the full story? Connect with me on{" "}
+              <a
+                href="https://linkedin.com/in/ronforbes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                LinkedIn
+              </a>.
             </p>
           </div>
 

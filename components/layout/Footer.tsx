@@ -50,11 +50,6 @@ export function Footer() {
                   Tech Stack
                 </Link>
               </li>
-              <li>
-                <Link href="/resume" className="hover:text-foreground transition-colors">
-                  Resume
-                </Link>
-              </li>
             </ul>
           </div>
 
