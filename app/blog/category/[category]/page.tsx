@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -89,12 +90,15 @@ export default async function CategoryPage({ params }: PageProps) {
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
               <Card className="h-full transition-all hover:shadow-lg">
                 {post.image && (
-                  <div className="aspect-video bg-muted relative overflow-hidden rounded-t-xl">
-                    <div className="absolute inset-0 flex items-center justify-center text-muted-foreground text-sm">
-                      Image
+                    <div className="aspect-video bg-muted relative overflow-hidden rounded-t-xl">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover transition-transform group-hover:scale-105"
+                      />
                     </div>
-                  </div>
-                )}
+                  )}
                 <CardHeader>
                   <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
                     <time dateTime={post.date}>{formatDate(post.date)}</time>

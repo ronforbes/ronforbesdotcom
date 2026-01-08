@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
+  icons: {
+    icon: "/HeadshotCircle128x128.png",
+    apple: "/HeadshotCircle128x128.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

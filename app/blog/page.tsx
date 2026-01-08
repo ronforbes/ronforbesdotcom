@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { getAllBlogPosts } from "@/lib/posts";
@@ -59,9 +60,12 @@ export default function BlogPage() {
                 <Card className="h-full transition-all hover:shadow-lg">
                   {post.image && (
                     <div className="aspect-video bg-muted relative overflow-hidden rounded-t-xl">
-                      <div className="absolute inset-0 flex items-center justify-center text-muted-foreground text-sm">
-                        Image
-                      </div>
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover transition-transform group-hover:scale-105"
+                      />
                     </div>
                   )}
                   <CardHeader>

@@ -8,7 +8,7 @@ export function CategoryGrid() {
     <section className="container py-12 md:py-16">
       <div className="space-y-4 text-center mb-10">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-          Explore by Category
+          Ready to learn?
         </h2>
         <p className="text-muted-foreground max-w-[600px] mx-auto">
           Browse articles organized by topic. Each category contains curated content

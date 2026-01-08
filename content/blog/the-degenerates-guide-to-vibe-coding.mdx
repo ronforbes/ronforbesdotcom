@@ -1,0 +1,166 @@
+---
+title: "The Degenerate's Guide to Vibe Coding"
+description: "A PM's honest take on AI-assisted coding after three months of real practice—what works, what doesn't, and why your 'just enough to be dangerous' technical background might be your biggest advantage."
+date: "2025-12-14"
+category: "ai"
+featured: true
+image: "/images/blog/vibe-coding-threejs-prototype.gif"
+---
+
+![A prototype I built using Three.js and React Three Fiber](/images/blog/vibe-coding-threejs-prototype.gif)
+
+Let me be direct: I'm writing this partly to organize my own thoughts and partly because **I'm tired of AI productivity theater.**
+
+You know what I'm talking about. The LinkedIn posts with perfectly curated Claude screenshots. The YouTube thumbnails promising you'll be a millionaire by Tuesday. The Discord servers where everyone's shipping except you. It's exhausting, and it's designed to make you feel like you're falling behind.
+
+Three months ago, I was drowning in that feeling. I'd been watching the vibe coding wave build from the sidelines—Cursor this, Lovable that, [Bolt.new](http://Bolt.new) the other thing. Every week brought new frontier models, new techniques, new tools. The landscape was changing faster than I could keep up, and as a PM at Meta working on Quest, I felt this creeping insecurity: *What if I'm becoming obsolete?*
+
+PMs are in a weird spot right now. Layoffs are common. Expectations are rising. Everyone's suddenly an "AI-native" product leader who's 10x-ing their output. And meanwhile, I'm just trying to figure out if Cursor is actually better than VS Code Copilot or if it even matters.
+
+So I did what I always do when I'm confused: I went hands-on.
+
+## What This AI Coding Guide Actually Is
+
+This isn't a comprehensive guide. It's not "10 AI Tools That Will Change Your Life" or "The Definitive Vibe Coding Stack for 2025."
+
+This is just me recording what's working right now and where I'm still struggling. A snapshot from someone three months into actually trying this stuff instead of just reading about it. If you're a midlife PM who codes a little on the side, who's technically minded but not a "real" engineer, who's wondering if all this AI coding hype is real—this is for you.
+
+## Why PMs and Non-Engineers Can Excel at AI-Assisted Coding
+
+Here's the thing nobody talks about: if you have a CS degree gathering dust somewhere in your past (or even if you don't but you've ever coded a thing in your life), you're sitting on an untapped advantage.
+
+I started coding as a kid—wrote my first number-guessing game in QBASIC in elementary or middle school. Studied computer science in college. Worked in QA. Then switched to PM after a couple years because I thought I was okay at coding but would never knock it out of the park.
+
+For years, I felt like an impostor. Not technical enough compared to the engineers I worked with. Not business-savvy enough compared to the product leaders who came up through consulting or finance. Just this awkward middle ground.
+
+But that "just enough to be dangerous" background? That's exactly what makes AI coding click.
+
+You remember what a for-loop is. You've debugged something before. You understand the difference between client and server, even if you're fuzzy on the details. You can read error messages without your brain completely shutting down.
+
+That foundational knowledge—even if it's rusty, even if you haven't touched code in a decade—gives you the vocabulary to communicate with AI coding tools. And it turns out, that's most of the battle.
+
+## Real-World AI Coding Projects: VR Prototypes and Web Games
+
+The honest answer is: work stuff and one personal project that's been living rent-free in my head for years.
+
+### The Work Prototypes
+
+At Meta, I've been building quick VR prototypes to test product ideas. Nothing production-ready, just interactive concepts to help the team visualize what we're talking about in PRDs.
+
+Here's what changed with AI coding: I can now go from "wouldn't it be cool if..." to a working WebXR prototype in an afternoon.
+
+I built a combined prototype project using Three.js and React Three Fiber. Think of it as one codebase with multiple scenes, each demonstrating a different concept. This way I'm not constantly rewriting boilerplate or setting up new projects. I can iterate on ideas quickly, share common functionality across prototypes, and—crucially—share these demos easily.
+
+The web is perfect for this: local server for instant testing, Vercel for public hosting, easy internal sharing without the nightmare of mobile app distribution. Plus WebGPU lets me create visually expressive effects, and WebXR means I can make it immersive when needed.
+
+*(Side note: I might formalize this "combined prototype framework" approach in a future post if people find it useful. Let me know in the comments.)*
+
+### The Personal Project
+
+I'm also building [Block Party](https://blockparty.ronforbes.com/), a modern web-based successor to Tetris Attack. It's the kind of project I've been wanting to build for years but never had the skills to actually execute on.
+
+With AI coding, I finally can. We're talking procedural music generation with Web Audio API and Tone.js, WebGPU particle systems, bloom effects—stuff that would have taken me months to figure out solo.
+
+## My AI Coding Stack: Cursor, Claude Code, and GitHub Codespaces
+
+I'm mainly using **Cursor** (an AI-powered code editor) and **Claude Code** (Anthropic's coding assistant).
+
+Why? Honestly, because they're supported by our IT policy at work. That's it.
+
+I've also experimented with other AI coding tools like Antigravity and Gemini 2.0, which are incredible for different use cases. IT eventually blocked Antigravity for me, but while I had access, it was fantastic. VS Code with Copilot is great. Codex is great. They're all great.
+
+Here's my actual advice: **Don't let picking the "right" tool slow you down.**
+
+Seriously. The AI influencers will tell you their stack is the only way. They're wrong, or they're being paid, or both. These tools are converging fast enough that the differences matter way less than just starting.
+
+For Block Party specifically, I use **GitHub Codespaces + Claude Code**. GitHub Codespaces is a cloud-based development environment that runs VS Code in the browser, making it perfect for AI-assisted development. I went this route because Block Party is a personal project, and I'd rather not do serious work on it on my local machine for legal reasons. Does this probably not matter? Yes. Does it give me peace of mind? Also yes.
+
+## What Actually Works: Proven AI Coding Techniques
+
+### The Magic Moment
+
+The first time you prompt for a basic WebGPU boilerplate and see a spinning triangle with tens of thousands of particles floating around—created in seconds—it feels like actual magic.
+
+It's the same rush I got as a kid making that number-guessing game. The "oh shit, this works!" moment where you realize you can make things that didn't exist before.
+
+The pace of creation is genuinely different. You describe what you want, and it appears. When it works, it feels like having a conversation with the computer about what you're trying to build.
+
+### What Keeps Working
+
+Sessions can last anywhere from 15 minutes to hours because it's so easy to get into flow. The barrier to starting is almost nonexistent now.
+
+I've found a few patterns that consistently work:
+
+- **Be specific in your prompts.** Vague requests get vague results. "Add a particle effect" is worse than "Add a particle system using WebGPU that emits 10,000 particles from the center with random velocities and colors that fade over 2 seconds."
+- **Paste screenshots.** When something breaks, show it. Don't just describe the bug.
+- **Include console logs.** Copy-paste the actual error messages. AI is shockingly good at debugging when you give it the full context.
+- **Break problems down.** If the AI is struggling, decompose the problem into smaller steps. This is just good engineering practice anyway.
+- **Start fresh when things degrade.** After a long conversation, the context window fills up and quality drops. Just start a new chat. It's not giving up; it's using the tool correctly.
+
+## Common AI Coding Challenges and How to Overcome Them
+
+Let me tell you about the day I spent almost eight hours trying to create a prototype around a particularly tricky interaction problem we'd been discussing at work.
+
+Eight. Hours.
+
+The AI would generate code. It wouldn't work. I'd explain the error. It would try again. Still broken. Different error now. Try again. Now the first bug is back. Try to fix both. Everything's broken. Start over.
+
+By hour six, I was ready to throw my laptop out the window. By hour seven, I was questioning my entire career. By hour eight, I finally got it working, and I felt... tired. Not victorious. Just tired.
+
+Here's what I learned: **This is normal. This is the process. Don't let yourself get down.**
+
+This is a skill. You're not going to be an expert right away. The AI influencers showing their perfect workflows? They're not showing you the hours of fighting with context windows and hallucinated imports and mysterious type errors.
+
+Embrace the beginner's mindset. Laugh at yourself. Don't take life—or the tech industry—too seriously. You'll never make it out alive anyway. (Kidding. You'll be fine.)
+
+### The Annoying Parts
+
+Sometimes the AI gets stuck in a loop trying to fix the same bug over and over. When this happens, your job is to be the senior engineer in the room: step back, reassess, try a different approach.
+
+Sometimes you'll realize you need actual technical knowledge that AI can't just generate for you. Understanding how React's rendering works. Knowing the difference between state management approaches. Recognizing when you need to optimize performance.
+
+The gap between what you see AI coding influencers doing and reality? It's real. They're not lying exactly, but they're also not showing you the messy middle. The part where nothing works and you have no idea why.
+
+## How AI is Changing Product Management and Software Development
+
+Here's what I've realized after three months: **AI isn't replacing engineers, designers, or PMs. But it's changing what expertise means.**
+
+Your expertise in your field makes you better at using AI tools. Engineers who understand architecture are using AI to massively accelerate their work. Designers are vibe coding their Figma mockups into interactive prototypes without waiting for engineering support.
+
+And PMs? We're in a unique position.
+
+We're already used to communicating requirements clearly. Breaking down problems. Defining desired outcomes. Providing feedback. Iterating based on results.
+
+Sound familiar? That's prompting. That's the skill.
+
+People getting terrible results with AI? They're writing terrible prompts. But prompting looks a lot like communicating with a product development team. If you're good at that, you already have the core skill for AI coding.
+
+## Why AI Coding Matters Now: The Democratization of Development
+
+At this past week's Game Awards, **Clair Obscur: Expedition 33** won Game of the Year. It was built by a tiny French studio, Sandfall Interactive, and competed against industry titans with hundred-million-dollar budgets.
+
+I don't know if they used AI in their development process. But we're at an inflection point regardless.
+
+Small teams can now create worldwide cultural impact. The barriers to building interactive experiences are collapsing. The tools for turning ideas into reality are democratizing faster than I've ever seen in my career.
+
+For me, I'm most excited about the power of AI to enable a new era of storytelling and entertainment. Independent creators. Weird ideas that would never get greenlit by a committee. Stories that couldn't exist before because the cost of building them was too high.
+
+We're at a moment. I don't know exactly where it leads, but I'm excited to find out.
+
+**LFG.**
+
+---
+
+## Your Turn
+
+If you're a PM thinking about trying vibe coding, here's my advice:
+
+1. **Pick a tool and start.** Don't overthink it. They're all good enough.
+2. **Build something you actually want.** Not a todo app. Something that excites you.
+3. **Expect to suck at first.** This is normal and good.
+4. **Share your work.** Even if it's broken. Especially if it's broken.
+5. **Don't compare yourself to the influencers.** They're playing a different game.
+
+And if you want to see what I'm building, check out [Block Party](https://blockparty.ronforbes.com/). It's still very much a work in progress, but that's kind of the point.
+
+What are you building? Drop a comment. I'd love to hear about it.

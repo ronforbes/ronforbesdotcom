@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <p className="text-xl text-muted-foreground">{post.description}</p>
       </header>
 
-      <div className="prose prose-gray dark:prose-invert max-w-none">
+      <div className="prose prose-lg prose-gray dark:prose-invert max-w-none prose-headings:tracking-tight prose-h2:text-3xl prose-h3:text-2xl prose-a:text-primary prose-a:underline prose-pre:whitespace-pre-wrap prose-pre:break-words prose-img:w-full prose-img:rounded-lg">
         <MDXRemote
           source={post.content}
           options={{

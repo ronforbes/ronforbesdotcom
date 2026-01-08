@@ -5,41 +5,38 @@ import Link from "next/link";
 export function Hero() {
   return (
     <section className="container py-12 md:py-24">
-      <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+      <div className="grid gap-8 lg:grid-cols-[2fr_3fr] lg:gap-12 items-center">
+        <div className="flex justify-center lg:justify-end">
+          <Image
+            src="/images/hero.png"
+            alt="Ron Forbes"
+            width={500}
+            height={500}
+            className="w-auto h-auto max-w-full"
+            priority
+          />
+        </div>
         <div className="space-y-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Hi, I&apos;m Ron Forbes
+            Hey! 👋🏾 I'm Ron.
           </h1>
           <p className="text-xl text-muted-foreground max-w-[600px]">
-            I share insights and experiences on career development, artificial intelligence,
-            health, virtual reality, personal finance, and the pursuit of happiness.
+            I'm a product manager at Meta Quest exploring how AI is changing the way we work, create, and grow.<br /><br />
+
+            I write about AI-assisted productivity, personal knowledge management, and building things with tools like Claude Code and Obsidian.<br /><br />
+
+            Currently vibe coding my way through life.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
             <Button asChild size="lg">
-              <Link href="/blog">Read My Blog</Link>
+              <Link href="/blog">Read my blog</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/about">Learn More About Me</Link>
+              <Link href="/about">Learn more about me</Link>
             </Button>
           </div>
         </div>
-        <div className="relative aspect-square lg:aspect-auto lg:h-[500px] rounded-xl overflow-hidden bg-muted">
-          {/* Placeholder for hero image */}
-          <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-            <div className="text-center">
-              <p className="text-sm">Hero Image</p>
-              <p className="text-xs mt-2">Add your image at /public/images/hero.jpg</p>
-            </div>
-          </div>
-          {/* Uncomment when you add your hero image */}
-          {/* <Image
-            src="/images/hero.jpg"
-            alt="Ron Forbes"
-            fill
-            className="object-cover"
-            priority
-          /> */}
-        </div>
+
       </div>
     </section>
   );
