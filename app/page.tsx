@@ -11,7 +11,7 @@ export default function Home() {
         <div className="container">
           <NewsletterForm
             title="Subscribe to The Degenerate"
-            description="New here? I'm documenting my experiments with AI productivity tools in real-time. Join my newsletter to follow along."
+            description="I'm building my AI productivity system in public. Join my newsletter to get the experiments, setups, and lessons I don't post publicly."
           />
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function Home() {
         <div className="container">
           <NewsletterForm
             title="Don't Miss Future Experiments"
-            description="Get weekly(ish) updates on AI productivity, PKM systems, and whatever I'm building next."
+            description="Get weekly updates on AI productivity, PKM systems, and whatever I'm building next."
           />
         </div>
       </div>

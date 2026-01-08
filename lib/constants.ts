@@ -5,9 +5,10 @@ export const SITE_URL = "https://ronforbes.com";
 
 export const BLOG_CATEGORIES = [
   { slug: "career", name: "Career", description: "Career development and professional growth" },
-  { slug: "ai", name: "AI Productivity", description: "AI tools and workflows for getting things done" },
+  { slug: "ai", name: "AI", description: "AI tools and workflows for getting things done" },
+  { slug: "productivity", name: "Productivity", description: "Tips and tools for getting things done efficiently" },
   { slug: "health", name: "Health", description: "Health and wellness topics" },
-  { slug: "vr", name: "Quest Workflows", description: "Productivity and workflows on Meta Quest" },
+  { slug: "vr", name: "Spatial Computing", description: "Productivity and workflows on Meta Quest" },
   { slug: "personal-finance", name: "Personal Finance", description: "Money management and financial planning" },
   { slug: "happiness", name: "Happiness", description: "Life satisfaction and well-being" },
   { slug: "pkm", name: "Personal Knowledge Management", description: "Systems for organizing knowledge and notes" },
