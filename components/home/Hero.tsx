@@ -18,10 +18,10 @@ export function Hero() {
         </div>
         <div className="space-y-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Hey! 👋🏾 I'm Ron.
+            Hey! 👋🏾 I&apos;m Ron.
           </h1>
           <p className="text-xl text-muted-foreground max-w-[600px]">
-            I'm a product manager at Meta Quest exploring how AI is changing the way we work, create, and grow.<br /><br />
+            I&apos;m a product manager at Meta Quest exploring how AI is changing the way we work, create, and grow.<br /><br />
 
             I write about AI-assisted productivity, personal knowledge management, and building things with tools like Claude Code and Obsidian.<br /><br />
 

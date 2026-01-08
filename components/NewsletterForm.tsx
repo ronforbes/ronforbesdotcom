@@ -8,7 +8,7 @@ export function NewsletterForm({ variant = "default" }: NewsletterFormProps) {
       <div className="rounded-lg border bg-card p-6">
         <h3 className="font-semibold text-lg mb-2">😈 Subscribe to<b>The Degenerate</b></h3>
         <p className="text-sm text-muted-foreground mb-4">
-          I'm building my AI productivity system in public and documenting everything. Join me for weekly experiments with Claude Code, Obsidian, and whatever I'm building next.
+          I&apos;m building my AI productivity system in public and documenting everything. Join me for weekly experiments with Claude Code, Obsidian, and whatever I&apos;m building next.
         </p>
         <div>
           <iframe src="https://ronforbes.substack.com/embed" width="100%" height="150" scrolling="no" className="border-0"></iframe>
@@ -26,7 +26,7 @@ export function NewsletterForm({ variant = "default" }: NewsletterFormProps) {
             <span className="text-4xl"><b>The Degenerate</b></span>
           </h2>
           <p className="text-muted-foreground">
-            I'm building my AI productivity system in public and documenting everything. Follow along for weekly experiments with Claude Code, Obsidian, and whatever I'm building next.
+            I&apos;m building my AI productivity system in public and documenting everything. Follow along for weekly experiments with Claude Code, Obsidian, and whatever I&apos;m building next.
           </p>
         </div>
         <div className="space-y-4">
