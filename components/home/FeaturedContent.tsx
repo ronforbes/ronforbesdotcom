@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { getFeaturedBlogPosts, getFeaturedVideos } from "@/lib/posts";
+import { getFeaturedBlogPosts } from "@/lib/posts";
 import { BLOG_CATEGORIES } from "@/lib/constants";
 
 function formatDate(dateString: string) {
@@ -15,13 +15,12 @@ function formatDate(dateString: string) {
 }
 
 export function FeaturedContent() {
-  const featuredPosts = getFeaturedBlogPosts();
-  const featuredVideos = getFeaturedVideos();
+  const featuredPosts = getFeaturedBlogPosts(Infinity);
 
   return (
     <section className="container py-12 md:py-16">
       {/* Featured Blog Posts */}
-      <div className="space-y-6 mb-16">
+      <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-3xl font-bold tracking-tighter">Featured Posts</h2>
@@ -30,7 +29,7 @@ export function FeaturedContent() {
             </p>
           </div>
           <Button asChild variant="outline">
-            <Link href="/blog">View All</Link>
+            <Link href="/blog">Read All Posts →</Link>
           </Button>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -74,62 +73,6 @@ export function FeaturedContent() {
           )}
         </div>
       </div>
-
-      {/* Featured Videos */}
-      {featuredVideos.length > 0 && (
-        <div className="space-y-6">
-          <div className="flex items-center justify-between">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tighter">Featured Videos</h2>
-              <p className="text-muted-foreground mt-2">
-                Watch my latest video content
-              </p>
-            </div>
-            <Button asChild variant="outline">
-              <Link href="/videos">View All</Link>
-            </Button>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            {featuredVideos.map((video) => {
-              const category = BLOG_CATEGORIES.find((c) => c.slug === video.category);
-              return (
-                <Link key={video.slug} href={`/videos/${video.slug}`} className="group">
-                  <Card className="h-full transition-all hover:shadow-lg">
-                    <div className="aspect-video bg-muted relative overflow-hidden rounded-t-xl">
-                      <Image
-                        src={`https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
-                        alt={video.title}
-                        fill
-                        className="object-cover transition-transform group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity">
-                          <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <CardHeader>
-                      <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
-                        <span className="font-medium text-primary">{category?.name}</span>
-                        <span>•</span>
-                        <time dateTime={video.date}>{formatDate(video.date)}</time>
-                      </div>
-                      <CardTitle className="group-hover:text-primary transition-colors">
-                        {video.title}
-                      </CardTitle>
-                      <CardDescription className="line-clamp-2">
-                        {video.description}
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      )}
     </section>
   );
 }

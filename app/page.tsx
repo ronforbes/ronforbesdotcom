@@ -9,7 +9,10 @@ export default function Home() {
 
       <div className="bg-muted/30 py-12">
         <div className="container">
-          <NewsletterForm />
+          <NewsletterForm
+            title="Subscribe to The Degenerate"
+            description="New here? I'm documenting my experiments with AI productivity tools in real-time. Join my newsletter to follow along."
+          />
         </div>
       </div>
 
@@ -17,7 +20,10 @@ export default function Home() {
 
       <div className="bg-muted/30 py-16">
         <div className="container">
-          <NewsletterForm />
+          <NewsletterForm
+            title="Don't Miss Future Experiments"
+            description="Get weekly(ish) updates on AI productivity, PKM systems, and whatever I'm building next."
+          />
         </div>
       </div>
     </>

@@ -11,7 +11,8 @@ export function Footer() {
           <div className="space-y-3">
             <h3 className="font-semibold">{SITE_NAME}</h3>
             <p className="text-sm text-muted-foreground">
-              Sharing insights on career, AI, health, and more.
+              Product Manager at Meta Quest. I write about AI productivity,
+              personal knowledge management, and building in public.
             </p>
           </div>
 
