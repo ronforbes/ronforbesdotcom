@@ -43,7 +43,7 @@ export default function AboutPage() {
           <div>
             <h2>My Story</h2>
             <p>
-              I&apos;ve spent my career building products at the intersection of technology and human experience. Before Meta, I worked on League of Legends esports events, Kinect on Xbox, Internet Explorer, and a side project mix of games, apps, and platforms, always drawn to pushing the boundaries of what&apos;s possible.
+              I&apos;ve spent my career building products at the intersection of technology and human experience. Before Meta, I worked at Riot Games on League of Legends esports events, Microsoft on Xbox Kinect and Internet Explorer, and founded two indie game studios, always drawn to pushing the boundaries of what&apos;s possible.
             </p>
             <p>
               Like a lot of 90s kids, I grew up dreaming of making video games. That dream led me to learn coding, pick up piano to play game soundtracks, and eventually land in product management. But recently, I realized something: the thing that excites me now isn&apos;t just making games—it&apos;s still building, but also teaching, sharing, and helping others see what&apos;s possible with technology.
@@ -60,11 +60,11 @@ export default function AboutPage() {
             </p>
             <p>
               <strong>AI-Assisted Productivity</strong><br />
-              I use tools like Claude Code to build websites, applications, and workflows. I call it &quot;vibe coding life&quot;—a PM&apos;s approach to technical work where you don&apos;t need to be an expert to ship real things.
+              I use tools like Claude Code to build websites, applications, and workflows. I call it &quot;vibe coding life&quot;—a PM&apos;s approach to technical and non-technical work where you don&apos;t need to be an expert to ship real things.
             </p>
             <p>
               <strong>Personal Knowledge Management</strong><br />
-              I&apos;m obsessed with note-taking systems, particularly Notion, Apple Notes, and more recently Obsidian. I&apos;ve even used Claude Code as an AI life coach to synthesize years of scattered thoughts into actionable insights.
+              I&apos;m obsessed with note-taking systems, particularly Obsidian (my second brain with 2,000+ notes), as well as Notion and Apple Notes. I&apos;ve even used Claude Code as an AI life coach to synthesize years of scattered thoughts into actionable insights.
             </p>
             <p>
               <strong>Spatial Computing &amp; VR</strong><br />
@@ -83,7 +83,7 @@ export default function AboutPage() {
               You&apos;re looking at it! I migrated from Notion + Super.so to Next.js + Markdown, vibe coding my way through the entire stack.
             </p>
             <p>
-              <strong>ronOS</strong><br />
+              <strong>RonOS</strong><br />
               My personal knowledge base in Obsidian, connected to Claude Code for AI-powered reflection and life coaching.
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function AboutPage() {
             <h2>Career Highlights</h2>
             <p>
               <strong>Meta (Facebook)</strong> | Product Manager, Horizon OS Input &amp; Interaction | 2019 - Present<br />
-              Leading strategy and development of the system input platform and interaction experience powering Meta Quest. Work includes the Quest system shell, input capabilities, and core interaction experiences. Included a role managing a PM team leading the system shell.
+              Leading strategy and development of the system input platform and interaction experience powering Meta Quest. Work includes input capabilities and core interaction experiences. I also led the PM team building the Quest system shell.
             </p>
             <p>
               <strong>Block Party</strong> | Founder &amp; CEO | 2018 - 2019<br />
