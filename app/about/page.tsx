@@ -28,7 +28,7 @@ export default function AboutPage() {
 
       <div className="grid gap-8 md:grid-cols-3 mb-12">
         <div className="md:col-span-1">
-          <div className="aspect-square rounded-xl overflow-hidden bg-muted">
+          <div className="aspect-square rounded-xl overflow-hidden">
             <Image
               src="/images/profile.jpg"
               alt="Ron Forbes"
@@ -43,10 +43,10 @@ export default function AboutPage() {
           <div>
             <h2>My Story</h2>
             <p>
-              I&apos;ve spent my career building products at the intersection of technology and human experience. Before Meta, I worked on games, apps, and platforms, always drawn to projects that pushed the boundaries of what&apos;s possible.
+              I&apos;ve spent my career building products at the intersection of technology and human experience. Before Meta, I worked on League of Legends esports events, Kinect on Xbox, Internet Explorer, and a side project mix of games, apps, and platforms, always drawn to pushing the boundaries of what&apos;s possible.
             </p>
             <p>
-              Like a lot of 90s kids, I grew up dreaming of making video games. That dream led me to learn coding, pick up piano to play game soundtracks, and eventually land in product management. But recently, I realized something: the thing that excites me now isn&apos;t making games—it&apos;s teaching, sharing, and helping others see what&apos;s possible with technology.
+              Like a lot of 90s kids, I grew up dreaming of making video games. That dream led me to learn coding, pick up piano to play game soundtracks, and eventually land in product management. But recently, I realized something: the thing that excites me now isn&apos;t just making games—it&apos;s still building, but also teaching, sharing, and helping others see what&apos;s possible with technology.
             </p>
             <p>
               Which brings me to why this site exists.
@@ -60,11 +60,11 @@ export default function AboutPage() {
             </p>
             <p>
               <strong>AI-Assisted Productivity</strong><br />
-              I use tools like Claude Code and Cursor to build websites, applications, and workflows. I call it &quot;vibe coding&quot;—a PM&apos;s approach to technical work where you don&apos;t need to be an expert to ship real things.
+              I use tools like Claude Code to build websites, applications, and workflows. I call it &quot;vibe coding life&quot;—a PM&apos;s approach to technical work where you don&apos;t need to be an expert to ship real things.
             </p>
             <p>
               <strong>Personal Knowledge Management</strong><br />
-              I&apos;m obsessed with note-taking systems, particularly Obsidian. I&apos;ve even used Claude Code as an AI life coach to synthesize years of scattered thoughts into actionable insights.
+              I&apos;m obsessed with note-taking systems, particularly Notion, Apple Notes, and more recently Obsidian. I&apos;ve even used Claude Code as an AI life coach to synthesize years of scattered thoughts into actionable insights.
             </p>
             <p>
               <strong>Spatial Computing &amp; VR</strong><br />
@@ -83,7 +83,7 @@ export default function AboutPage() {
               You&apos;re looking at it! I migrated from Notion + Super.so to Next.js + Markdown, vibe coding my way through the entire stack.
             </p>
             <p>
-              <strong>RonOS</strong><br />
+              <strong>ronOS</strong><br />
               My personal knowledge base in Obsidian, connected to Claude Code for AI-powered reflection and life coaching.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
               When I&apos;m not coding or taking notes, you&apos;ll find me:
             </p>
             <ul>
-              <li>Playing piano (game soundtracks, mostly)</li>
+              <li>Playing piano (covers and game soundtracks, mostly)</li>
               <li>Exploring VR worlds and productivity experiments</li>
               <li>Building Notion databases that probably over-complicate simple problems</li>
               <li>Thinking about how to make technology more human</li>
