@@ -22,7 +22,7 @@ interface Tool {
 
 const aiDevTools: Tool[] = [
   {
-    name: "Claude Code",
+    name: "Claude & Claude Code",
     url: "https://claude.ai/code",
     useCase: "AI-assisted coding, website development, and personal knowledge management",
     why: "Best balance of coding capability and natural language understanding. Can access my local file system, making it perfect for Obsidian integration.",
@@ -147,6 +147,9 @@ const contentTools: Tool[] = [
     useCase: "Email newsletter (The Degenerate)",
     why: "Built-in email infrastructure, reader discovery features, simple to use.",
   },
+];
+
+const personalFinanceTools: Tool[] = [
   {
     name: "Monarch",
     url: "https://www.monarchmoney.com",
@@ -250,6 +253,15 @@ export default function TechPage() {
           <h2 className="text-2xl font-bold mb-4">Content Creation</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {contentTools.map((tool) => (
+              <ToolCard key={tool.name} tool={tool} />
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4">Personal Finance</h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            {personalFinanceTools.map((tool) => (
               <ToolCard key={tool.name} tool={tool} />
             ))}
           </div>
