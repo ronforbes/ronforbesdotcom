@@ -39,8 +39,8 @@ const activeProjects: Project[] = [
       { title: "The Degenerate's Guide to Vibe Coding", url: "/blog/the-degenerates-guide-to-vibe-coding", description: "How I use AI to code" },
     ],
     links: [
-      { label: "Play Demo", emoji: "🎮", url: "#", external: true },
-      { label: "Read Build Log", emoji: "📝", url: "/blog?category=tech" },
+      { label: "Play Demo", emoji: "🎮", url: "https://blockparty.ronforbes.com/", external: true },
+      { label: "Read Build Log", emoji: "📝", url: "#" },
     ],
   },
   {
@@ -233,7 +233,7 @@ export default function ProjectsPage() {
       <div className="space-y-4 mb-12">
         <h1 className="text-4xl font-bold tracking-tighter">Building in Public</h1>
         <p className="text-xl text-muted-foreground">
-          I&apos;m documenting everything I build—from browser games to AI-powered knowledge systems. 
+          I&apos;m documenting everything I build—from browser games to AI-powered knowledge systems.
           Follow along as I vibe code my way through each project.
         </p>
         <p className="text-base">
