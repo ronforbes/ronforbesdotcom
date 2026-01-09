@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllVideos, getVideoBySlug } from "@/lib/posts";
 import { BLOG_CATEGORIES } from "@/lib/constants";
+import { formatDate } from "@/lib/utils";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
@@ -38,15 +39,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "video.other",
     },
   };
-}
-
-function formatDate(dateString: string) {
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
 }
 
 export default async function VideoPage({ params }: PageProps) {

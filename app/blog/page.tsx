@@ -4,20 +4,12 @@ import { Metadata } from "next";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { getAllBlogPosts } from "@/lib/posts";
 import { BLOG_CATEGORIES } from "@/lib/constants";
+import { formatDate } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "Read articles on career, AI, health, VR, personal finance, and happiness.",
 };
-
-function formatDate(dateString: string) {
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
 
 export default function BlogPage() {
   const posts = getAllBlogPosts();

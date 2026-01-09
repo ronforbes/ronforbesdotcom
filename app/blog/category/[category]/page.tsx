@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { getBlogPostsByCategory } from "@/lib/posts";
 import { BLOG_CATEGORIES, BlogCategory } from "@/lib/constants";
+import { formatDate } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ category: string }>;
@@ -30,15 +31,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${category.name} - Blog`,
     description: category.description,
   };
-}
-
-function formatDate(dateString: string) {
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
 }
 
 export default async function CategoryPage({ params }: PageProps) {

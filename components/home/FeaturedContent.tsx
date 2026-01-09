@@ -4,15 +4,7 @@ import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/ca
 import { Button } from "@/components/ui/button";
 import { getFeaturedBlogPosts } from "@/lib/posts";
 import { BLOG_CATEGORIES } from "@/lib/constants";
-
-function formatDate(dateString: string) {
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
+import { formatDate } from "@/lib/utils";
 
 export function FeaturedContent() {
   const featuredPosts = getFeaturedBlogPosts(Infinity);

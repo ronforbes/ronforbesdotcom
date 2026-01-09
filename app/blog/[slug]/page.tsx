@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/posts";
 import { BLOG_CATEGORIES } from "@/lib/constants";
+import { formatDate } from "@/lib/utils";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
@@ -40,15 +41,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.date,
     },
   };
-}
-
-function formatDate(dateString: string) {
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
