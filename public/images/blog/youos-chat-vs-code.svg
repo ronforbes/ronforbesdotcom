@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#1f2937" text-anchor="middle">Claude Chat vs Claude Code</text>
+
+  <!-- Left Column: Claude Chat -->
+  <g transform="translate(20, 60)">
+    <!-- Header -->
+    <rect x="0" y="0" width="370" height="70" rx="12" fill="#f5f5f5" filter="url(#shadow)"/>
+    <text x="50" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#6b7280">💬</text>
+    <text x="90" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#374151">Claude Chat</text>
+    <text x="185" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">"Like texting an advisor"</text>
+
+    <!-- Rows -->
+    <g transform="translate(0, 85)">
+      <!-- Row 1: Interaction -->
+      <rect x="0" y="0" width="370" height="55" rx="8" fill="#fafafa"/>
+      <text x="15" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af" text-transform="uppercase" letter-spacing="0.5">INTERACTION</text>
+      <text x="15" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">Transactional, one question at a time</text>
+
+      <!-- Row 2: Context -->
+      <rect x="0" y="60" width="370" height="55" rx="8" fill="#ffffff"/>
+      <text x="15" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">CONTEXT</text>
+      <text x="15" y="102" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">Recreate every session</text>
+
+      <!-- Row 3: Files -->
+      <rect x="0" y="120" width="370" height="55" rx="8" fill="#fafafa"/>
+      <text x="15" y="142" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">FILES</text>
+      <text x="15" y="162" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">Upload manually, copy/paste results</text>
+
+      <!-- Row 4: Workflow -->
+      <rect x="0" y="180" width="370" height="55" rx="8" fill="#ffffff"/>
+      <text x="15" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">WORKFLOW</text>
+      <text x="15" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">You do the work with AI help</text>
+
+      <!-- Row 5: Best For -->
+      <rect x="0" y="240" width="370" height="55" rx="8" fill="#fafafa"/>
+      <text x="15" y="262" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">BEST FOR</text>
+      <text x="15" y="282" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">Quick questions, research, drafts</text>
+
+      <!-- Row 6: Time -->
+      <rect x="0" y="300" width="370" height="55" rx="8" fill="#fee2e2"/>
+      <text x="15" y="322" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">TIME TO PROCESS MEETINGS</text>
+      <text x="15" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#dc2626">~30 minutes of copy-paste</text>
+    </g>
+  </g>
+
+  <!-- Right Column: Claude Code -->
+  <g transform="translate(410, 60)">
+    <!-- Header -->
+    <rect x="0" y="0" width="370" height="70" rx="12" fill="#eef2ff" filter="url(#shadow)"/>
+    <text x="50" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#6366f1">🤖</text>
+    <text x="90" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#4338ca">Claude Code</text>
+    <text x="185" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6366f1" text-anchor="middle">"Like having a chief of staff"</text>
+
+    <!-- Rows -->
+    <g transform="translate(0, 85)">
+      <!-- Row 1: Interaction -->
+      <rect x="0" y="0" width="370" height="55" rx="8" fill="#f5f3ff"/>
+      <text x="15" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">INTERACTION</text>
+      <text x="15" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">Autonomous, multi-step execution</text>
+
+      <!-- Row 2: Context -->
+      <rect x="0" y="60" width="370" height="55" rx="8" fill="#ffffff"/>
+      <text x="15" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">CONTEXT</text>
+      <text x="15" y="102" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">Maintains across sessions</text>
+
+      <!-- Row 3: Files -->
+      <rect x="0" y="120" width="370" height="55" rx="8" fill="#f5f3ff"/>
+      <text x="15" y="142" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">FILES</text>
+      <text x="15" y="162" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">Direct file system access</text>
+
+      <!-- Row 4: Workflow -->
+      <rect x="0" y="180" width="370" height="55" rx="8" fill="#ffffff"/>
+      <text x="15" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">WORKFLOW</text>
+      <text x="15" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">Delegate the work entirely</text>
+
+      <!-- Row 5: Best For -->
+      <rect x="0" y="240" width="370" height="55" rx="8" fill="#f5f3ff"/>
+      <text x="15" y="262" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">BEST FOR</text>
+      <text x="15" y="282" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#374151">Multi-step automation, file ops</text>
+
+      <!-- Row 6: Time -->
+      <rect x="0" y="300" width="370" height="55" rx="8" fill="#dcfce7"/>
+      <text x="15" y="322" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af">TIME TO PROCESS MEETINGS</text>
+      <text x="15" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#16a34a">~2 minutes of delegation</text>
+    </g>
+  </g>
+
+</svg>
