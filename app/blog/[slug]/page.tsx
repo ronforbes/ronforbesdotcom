@@ -5,6 +5,7 @@ import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/posts";
 import { BLOG_CATEGORIES } from "@/lib/constants";
 import { formatDate } from "@/lib/utils";
 import { NewsletterForm } from "@/components/NewsletterForm";
+import { Tweet } from "@/components/Tweet";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
@@ -87,6 +88,9 @@ export default async function BlogPostPage({ params }: PageProps) {
                 ],
               ],
             },
+          }}
+          components={{
+            Tweet,
           }}
         />
       </div>
